@@ -4,7 +4,9 @@ RUN apt update
 RUN apt install -y \
   build-essential \
   git \
+  npm \
   libsqlite3-dev
+RUN npm i -g yarn
 RUN gem install sqlite
 RUN gem install rails
 
